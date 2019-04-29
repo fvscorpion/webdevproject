@@ -1,0 +1,309 @@
+@import "vars.scss";
+
+@media only screen and (max-width : 992px)
+{
+    .header-top .container {
+        padding: 15px 20px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .header-content {
+        h1 {
+            font-size: 48px;
+        }
+    }
+
+    .services-item {
+        padding: 50px 20px;
+    }
+
+    .blog-home {
+        grid-row-gap: 50px;
+    }
+
+    .blog-item__content {
+        h4 {
+            margin-top: 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 840px) 
+{
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .latest-works {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pricing-plan {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-member {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width : 810px)
+{
+    .menu {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width : 810px)
+{
+    .toggle-mnu {
+        display: block;
+    }
+    
+    .menu {
+		display: none;
+	    position: absolute;
+	    right: 0;
+        top: 70px;
+        width: 100%;
+
+        ul {
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+    
+            padding: 13px 0;
+            background: #fff;
+        }
+
+        a {
+            display: block;
+            font-size: 16px;
+            padding: 12px;
+            background: #fff;
+            color: #000;
+            margin: 0;
+
+            &:hover {
+                background: #232323;
+                color: $secondary-color;
+                border-bottom: none;
+            }
+        }
+	}
+}
+
+@media only screen and (max-width : 768px)
+{
+    .header-content {
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .contact-item__text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width : 720px)
+{
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us,
+    .our-services,
+    .portfolio,
+    .pricing,
+    .team,
+    .blog,
+    .contact {
+        padding: 60px 0;
+
+        .mb {
+            margin-bottom: 60px;
+        }
+    }
+
+    .portfolio {
+        .toggles {
+            margin-bottom: 60px;
+        }
+    }
+
+    .blog-item {
+        grid-template-columns: 1fr;
+
+        &__img {
+            margin-right: 0;
+        }
+
+        &:nth-child(2n) {
+            .blog-item__img {
+                order: 1;
+                margin-right: 0;
+            }
+            .blog-item__content {
+                order: 2;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .blog-item__content {
+        h4 {
+            margin-top: 30px;
+        }
+
+        p {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+@media only screen and (max-width : 640px)
+{
+    .header-content {
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 18px;
+        }
+
+        .header-buttons {
+            margin-top: 50px;
+        }
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .services-item {
+        padding: 30px 20px;
+
+        .button {
+            font-size: 18px;
+            padding: 15px;
+        }
+    }
+
+    .toggles {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .button-view {
+        width: 180px;
+        margin-top: 60px;
+        font-size: 18px;
+        padding: 15px;  
+    }
+
+    .plan-info {
+        padding: 30px;
+        background-color: #3949ab;
+    }
+
+    .plan__name {
+        margin-bottom: 10px;
+    }
+
+    .plan-properties {
+        padding: 35px;
+        p {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .button-order {
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        .inputs {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media only screen and (max-width : 620px) {
+    .contacts-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width : 480px)
+{
+    .header-content {
+        h1 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 16px;
+        }
+
+        .button {
+            width: 200px;
+            padding: 20px;
+            font-size: 18px;
+        }
+    }
+
+    .latest-works {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-plan {
+        grid-template-columns: 1fr;
+    }
+
+    .team-member {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-item__content {
+        h4 {
+            margin-top: 30px;
+            font-size: 22px;
+        }
+
+        span {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+    }
+
+    .contact-form {
+        .send {
+            justify-self: center;
+            width: 180px;
+        }
+    }
+
+    .footer {
+        p {
+            font-size: 18px;
+        }
+    }
+} 
+
+@media only screen and (max-width : 360px)
+{
+    .blog-item__content {
+        .date {
+            margin-right: 20px;
+        }
+    }
+}
