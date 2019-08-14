@@ -1,4 +1,6 @@
 $(function() {
+	$(window).scrollTop(0);
+	
 	$(".toggle-mnu").click(function() {
 		if (($(window).width()) < 810) {
 			$(this).toggleClass("on");
