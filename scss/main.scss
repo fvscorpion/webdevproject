@@ -23,7 +23,7 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        padding: 30px 20px;
+        padding: 20px;
     }
 }
 
@@ -182,7 +182,7 @@
 
 .our-services {
     text-align: center;
-    background-color: #e4fdf9;
+    background-color: #f8f8f8;
     padding: 125px 0;
 
     .mb {
@@ -199,7 +199,6 @@
 .services-item {
     padding: 50px;
     background-color: $secondary-color;
-    transition: all 0.3s ease-out;
 
     &__img {
         display: grid;
@@ -226,7 +225,6 @@
         padding: 20px;
         text-transform: uppercase;
         border: 2px solid $primary-color;
-        transition: all 0.3s ease-out;
     }
 
     &:hover {
@@ -344,7 +342,7 @@
 }
 
 .pricing {
-    background-color: #f0f0f0;
+    background-color: #f6f6f6;
     text-align: center;
     padding: 125px 0;
 
@@ -505,7 +503,7 @@
 }
 
 .blog {
-    background-color: #e4fdf9;
+    background-color: #fafafa;
     padding: 125px 0;
 
     .mb {
